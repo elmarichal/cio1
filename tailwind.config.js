@@ -50,7 +50,7 @@ export default {
       fontFamily: {
         'sans': ['Roboto', 'sans-serif'],
         'heading': ['Poppins', 'sans-serif'],
-        'arabic': ['Amiri', 'serif'],
+        'arabic': ['IBM Plex Sans Arabic', 'sans-serif'],
       },
       backgroundImage: {
         'hero-pattern': "url('https://images.pexels.com/photos/2547565/pexels-photo-2547565.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')",

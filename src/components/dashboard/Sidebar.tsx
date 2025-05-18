@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { 
   User, Clipboard, BookOpen, BarChart2, GraduationCap, 
-  MessageSquare, Briefcase, Award, PieChart, Menu, X 
+  MessageSquare, Briefcase, Award, PieChart, Menu, X, MessageCircle,
+  FileText, Rss
 } from 'lucide-react';
 
 interface SidebarProps {
@@ -16,10 +17,14 @@ const Sidebar: React.FC<SidebarProps> = ({ activeSection, onChangeSection }) => 
   const menuItems = [
     { id: 'profile', label: 'Profil', icon: User },
     { id: 'assessment', label: 'Auto-évaluation', icon: Clipboard },
+    { id: 'tests', label: 'Tests', icon: FileText },
+    { id: 'test-results', label: 'Résultats', icon: PieChart },
+    { id: 'newsfeed', label: 'Fil d\'actualité', icon: Rss },
     { id: 'programs', label: 'Filières', icon: GraduationCap },
     { id: 'career', label: 'Projet professionnel', icon: BarChart2 },
     { id: 'resources', label: 'Ressources', icon: BookOpen },
     { id: 'community', label: 'Communauté', icon: MessageSquare },
+    { id: 'chat', label: 'Chat', icon: MessageCircle },
     { id: 'jobs', label: 'Marché du travail', icon: Briefcase },
     { id: 'progress', label: 'Suivi', icon: Award },
     { id: 'analysis', label: 'Analyse', icon: PieChart },

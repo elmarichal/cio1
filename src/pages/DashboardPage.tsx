@@ -10,6 +10,10 @@ import Community from '../components/dashboard/Community';
 import Jobs from '../components/dashboard/Jobs';
 import Progress from '../components/dashboard/Progress';
 import Analysis from '../components/dashboard/Analysis';
+import Chat from '../components/dashboard/Chat';
+import Tests from '../components/dashboard/Tests';
+import TestResults from '../components/dashboard/TestResults';
+import Newsfeed from '../components/dashboard/Newsfeed';
 
 const DashboardPage: React.FC = () => {
   const [activeSection, setActiveSection] = useState('assessment');
@@ -20,6 +24,12 @@ const DashboardPage: React.FC = () => {
         return <Profile />;
       case 'assessment':
         return <Assessment />;
+      case 'tests':
+        return <Tests />;
+      case 'test-results':
+        return <TestResults />;
+      case 'newsfeed':
+        return <Newsfeed />;
       case 'programs':
         return <Programs />;
       case 'career':
@@ -28,6 +38,8 @@ const DashboardPage: React.FC = () => {
         return <Resources />;
       case 'community':
         return <Community />;
+      case 'chat':
+        return <Chat />;
       case 'jobs':
         return <Jobs />;
       case 'progress':
